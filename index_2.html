@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles_2.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="get">
+        <h2>How can we help you?</h2>
+        <ul>
+          <li>
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" />
+          </li>
+          <li>
+            <label for="email">Your e-mail address</label>
+            <input type="email" name="email" id="email" />
+          </li>
+          <li>
+            <label for="phone-number">Your phone number</label>
+            <input type="number" name="phone-number" id="phone-number" />
+          </li>
+        </ul>
+
+        <label for="message">Your message</label>
+        <textarea name="message" id="message" cols="" rows="6"></textarea>
+
+        <label for="">How did you find us?</label>
+        <select name="source" id="source">
+          <option value="web">Web search</option>
+          <option value="friends">Friends recommendation</option>
+          <option value="paper">Flyer</option>
+        </select>
+
+        <h2>How should we reply?</h2>
+
+        <section id="reply">
+          <div class="reply-method">
+            <input type="radio" name="reply" id="reply-call" value="call" />
+            <label for="">Call me</label>
+          </div>
+          <div class="reply-method">
+            <input type="radio" name="reply" id="reply-email" value="email" />
+            <label for="">Send me an email</label>
+          </div>
+          <div class="reply-method">
+            <input type="radio" name="reply" id="reply-none" value="none" />
+            <label for="">Don't reply</label>
+          </div>
+        </section>
+        <section>
+          <div class="terms">
+            <input type="checkbox" name="terms" id="accept-terms" />
+            <label for="">Accept Terms</label>
+          </div>
+        </section>
+
+        <section id="btn">
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
